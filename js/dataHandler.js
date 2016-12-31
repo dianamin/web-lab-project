@@ -4,15 +4,26 @@ var addDescription = function(data) {
 	articleTitle.innerText = 'Ce știe să facă?';
 	article.appendChild(articleTitle);
 
-	var paragraphs = data.description;
-	paragraphs.forEach(function (paragraphText) {
-		var paragraph = document.createElement('p');
-		paragraph.innerHTML = paragraphText;
-		article.appendChild(paragraph);
+	var elements = data.description;
+	elements.forEach(function (element) {
+		if (element.type == 'p') {
+			var paragraph = document.createElement('p');
+			paragraph.innerHTML = element.data;
+			article.appendChild(paragraph);
+		}
+		else if (element.type == 'ul') {
+			var list = document.createElement('ul');
+			element.data.forEach(function(listItemData) {
+				var listItem = document.createElement('li');
+				listItem.innerHTML = listItemData;
+				list.appendChild(listItem);
+			});
+			article.appendChild(list);
+		}
 	}.bind(this));
 
 	var paragraph = document.createElement('p');
-	paragraph.innerHTML = 'Mai multe detalii <a href="' + data.url + '">aici</a>.';
+	paragraph.innerHTML = 'Mai multe detalii <a href="' + data.siteURL + '">aici</a>.';
 
 	article.appendChild(paragraph);
 	return article;
@@ -61,7 +72,8 @@ var sectionHandler = function(data) {
 
 	
 	sectionContainer.appendChild(addDescription(data));
-	sectionContainer.appendChild(addExamples(data));
+	if (data.examples)
+		sectionContainer.appendChild(addExamples(data));
 	return section;
 }
 

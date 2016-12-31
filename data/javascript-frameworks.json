@@ -1,0 +1,68 @@
+[
+	{
+		"id": "angularjs",
+		"name": "AngularJS",
+		"description": 
+			[
+	         	{
+	         		"type": "p",
+	         		"data": "Framework-ul AngularJS te ajută să extinzi vocabularul HTML-ului pentru aplicația ta. Se bazează pe „controllere” - cu AngularJS, descrii comportamentul elementelor DOM pe care le utilizezi într-un mod elegant în Javascript."
+	         	},
+	       		{
+	         		"type": "p",
+	       			"data": "AngularJS se autointitulează „Superheroic JavaScript MVW Framework”."
+				}
+			],
+	    "siteURL": "https://angularjs.org"
+	},
+	{
+		"id": "jquery",
+		"name": "jQuery",
+		"description": 
+			[
+	         	{
+	         		"type": "p",
+	         		"data": "jQuery este o librărie foarte utilă pentru:"
+	         	},
+	       		{
+	         		"type": "ul",
+	       			"data": [
+						"selectarea elementelor HTML dintr-un document",
+						"includerea unor noi elemente HTML dinamic în pagină",
+						"gestionarea evenimentelor",
+						"animații",
+						"AJAX"
+	       			]
+				}
+			],
+	    "siteURL": "https://jquery.com"
+	},
+	{
+		"id": "polymer",
+		"name": "Polymer",
+		"description": 
+			[
+	         	{
+	         		"type": "p",
+	         		"data": "Polymer este o librărie cu ajutorul căreia îți poți crea propriile elemente HTML. Poți crea un șablon HTML stilizat cu CSS și îi poți descrie comportamentul utilizând metode și proprietăți în Javascript."
+	         	},
+	       		{
+	         		"type": "p",
+	       			"data": "Are deja o serie de elemente create și care folosesc Material Design."
+				}
+			],
+	    "siteURL": "https://www.polymer-project.org/"
+	},
+	{
+		"id": "react",
+		"name": "React",
+		"description": 
+			[
+	         	{
+	         		"type": "p",
+	         		"data": "Un termen important pentru a înțelege cum merge librăria React este paradigma de programare MVC - Model View Controller. Angular se apropie de paradigma MVC, iar React este doar V din MVC. Practic, este foarte util pentru afișarea datelor."
+	         	}
+			],
+	    "siteURL": "https://angularjs.org"
+	}
+]

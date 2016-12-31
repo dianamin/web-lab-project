@@ -4,8 +4,14 @@
 		"name": "Bootstrap",
 		"description": 
 			[
-	         	"Bootstrap este probabil cel mai popular framework de HTML, CSS și Javascript. Cu Bootstrap Web Development-ul devine mult mai rapid. Este foarte ușor de folosit și este potrivit pentru ecrane de orice formă și de orice dimensiuni.",
-	       		"Pe partea de CSS, Bootstrap stilizează elementele HTML fundamentale implementând clase CSS extensibile și introduce un sistem de tip Grid."
+	         	{
+	         		"type": "p",
+	         		"data": "Bootstrap este probabil cel mai popular framework de HTML, CSS și Javascript. Cu Bootstrap Web Development-ul devine mult mai rapid. Este foarte ușor de folosit și este potrivit pentru ecrane de orice formă și de orice dimensiuni."
+	       		},
+	       		{
+	         		"type": "p",
+	       			"data": "Pe partea de CSS, Bootstrap stilizează elementele HTML fundamentale implementând clase CSS extensibile și introduce un sistem de tip Grid."
+				}
 			],
 	    "siteURL": "http://getbootstrap.com",
 	    "examples": [
@@ -36,9 +42,18 @@
 		"name": "Material Design Frameworks",
 		"description": 
 			[
-	         	"Material Design (Google's visual design framework) se referă la o serie de clase CSS ce sintetizează principiile unui bun design.",
-	        	"Există o serie de framework-uri și librării care te pot ajuta să folosești elementele implementate în Material Design.",
-	        	"Fișierele CSS și Javascript care trebuie incluse pentru a folosi elementele implementate în Material Design pot fi găsite <a href=\"https://getmdl.io/index.html\">aici</a>."
+				{
+	         		"type": "p",
+	         		"data": "Material Design (Google's visual design framework) se referă la o serie de clase CSS ce sintetizează principiile unui bun design."
+	        	},
+	        	{
+	         		"type": "p",
+	        		"data": "Există o serie de framework-uri și librării care te pot ajuta să folosești elementele implementate în Material Design."
+	        	},
+	        	{
+	         		"type": "p",
+	        		"data": "Fișierele CSS și Javascript care trebuie incluse pentru a folosi elementele implementate în Material Design pot fi găsite <a href=\"https://getmdl.io/index.html\">aici</a>."
+	        	}
 	        ],
 	    "siteURL": "https://material.google.com",
 	    "examples": [
