@@ -180,7 +180,12 @@
   width: 100%;
 }
 
+#title {
+  position: relative;
+}
+
 #title>div {
+  z-index: 1;
   color: white;
   text-align: center;
   text-shadow: 0 0 5px black;
@@ -220,6 +225,7 @@ header {
 }
 
 nav {
+  z-index: 2;
   background-color: white;
   box-shadow: 0 5px 10px #777777;
   height: 50px;
@@ -235,4 +241,25 @@ section {
   justify-content: center;
   min-height: 100vh;
   width: 100%;
+}
+
+#fancy-svg {
+  z-index: 0;
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  left: 0;
+  top: 0;
+}
+
+circle {
+  r: 15px;
+  fill: black;
+  stroke: cyan;
+  stroke-width: 5px;
+}
+
+line {
+  stroke: black;
+  stroke-width: 1px;
 }
