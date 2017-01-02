@@ -66,6 +66,11 @@ Circle.prototype._setDirection = function() {
 Circle.prototype._move = function() {
 	this.x += this.directionX * this.speed;
 	this.y += this.directionY * this.speed;
+
+	if (this.x >= BORDER_RIGHT || this.x <= BORDER_LEFT)
+		this.directionX *= -1;
+	if (this.y >= BORDER_BOTTOM || this.y <= BORDER_TOP)
+		this.directionY *= -1;
 	this.updatePosition();
 }
 
