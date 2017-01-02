@@ -4,6 +4,7 @@ var EDGES_DENSITY = 0.25;
 
 var SPEED = 1;
 
+var CURSOR_AREA = 200;
 
 var svg = document.querySelector('#fancy-svg');
 
@@ -43,6 +44,22 @@ var Circle = function() {
 
 Circle.prototype.addEdge = function(edge) {
 	this.edges.push(edge);
+}
+
+Circle.prototype.highlight = function() {
+	this.element.classList.add('highlighted');
+}
+
+
+Circle.prototype.unhighlight = function() {
+	this.element.classList.remove('highlighted');
+}
+
+Circle.prototype.getDistance = function(x, y) {
+	var dx = this.x - x;
+	var dy = this.y - y; 
+
+	return Math.sqrt(dx * dx + dy * dy);
 }
 
 Circle.prototype.updatePosition = function() {
@@ -112,3 +129,23 @@ var initGraph = function() {
 }
 
 initGraph();
+
+var highlightCircles = function(x, y) {
+	circles.forEach(function(circle) {
+		console.log();
+		if (circle.getDistance(x, y) < CURSOR_AREA)
+			circle.highlight();
+		else circle.unhighlight();
+	});
+}
+
+
+document.querySelector('#title').onmouseover = function(event) {
+	highlightCircles(event.clientX, event.clientY);
+};
+
+document.querySelector('#title').onmouseout = function(event) {
+	circles.forEach(function(circle) {
+		circle.unhighlight();
+	});
+};

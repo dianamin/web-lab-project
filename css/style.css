@@ -258,9 +258,14 @@ circle {
   stroke: #2c3e50;
   stroke-width: 5px;
 
-  -webkit-transition: all 0.7s;
-  -moz-transition: all 0.7s;
-  transition: all 0.7s;
+  -webkit-transition: all 0.7s ease-in-out;
+  -moz-transition: all 0.7s ease-in-out;
+  transition: all 0.7s ease-in-out;
+}
+
+circle.highlighted {
+  r: 30px;
+  stroke: cyan;
 }
 
 line {
