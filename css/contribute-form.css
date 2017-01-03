@@ -34,6 +34,6 @@ input, textarea, select {
   transition: all 0.7s;
 }
 
-input:focus  {
+input:focus, textarea:focus {
   border-bottom: #1abc9c solid 3px;
 }

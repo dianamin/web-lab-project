@@ -170,16 +170,17 @@
         <h2> Contribuie </h2>
         <p> Vrei să adaugi o librărie sau un framework? </p>
         <form>
-          <input type="text" placeholder="Cum se numește?">
-          <select>
-            <option value="" disabled selected> În ce categorie l-ai încadra? </option>
+          <input id="new-framework-title" placeholder="Cum se numește?" type="text">
+          <select id="new-framework-page">
+            <option disabled selected value=""> În ce categorie l-ai încadra? </option>
             <option value="css"> CSS </option>
             <option value="javascript"> Javascript </option>
           </select>
-          <textarea placeholder="Descriere"></textarea>
-          <input type="text" placeholder="URL">
+          <textarea id="new-framework-description" placeholder="Descriere"></textarea>
+          <input placeholder="URL" type="text">
           <br>
-          <input type="text" placeholder="Exemplu"> <button id="more-examples">+</button>
+          <input class="new-framework-example" placeholder="Exemplu" type="text">
+          <button id="new-framework-more-examples" type="button">+</button>
         </form>
       </div>  
     </section>
@@ -192,5 +193,6 @@
     </section>
 
     <script src="js/fancy-svg.js"></script>
+    <script src="js/contribute-form.js"></script>
   </body>
 </html>
