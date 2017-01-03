@@ -1,0 +1,146 @@
+.info {
+  background-color: rgba(255, 255, 255, 0.5);
+  margin: 10px;
+  padding: 10px;
+}
+
+.site-example {
+  background-color: white;
+  box-shadow: 5px 5px 10px #aaaaaa;
+  display: inline-block;
+  margin: 10px;
+  padding: 10px;
+  text-align: center;
+}
+
+.site-example>a {
+  color: black;
+  display: block;
+  margin: 10px 0px;
+  text-decoration: none;
+}
+
+.site-example>img {
+  display: block;
+  width: 250px;
+}
+
+.site-examples-container {
+  text-align: center;
+}
+
+header {
+  align-items: center;
+  color: white;
+  display: flex;
+  justify-content: center;
+  min-height: 300px;
+  text-shadow: 0 0 20px black;
+  width: 100%;
+}
+
+section {
+  align-items: center;
+  display: flex;
+  justify-content: center;
+  min-height: 100vh;
+  width: 100%;
+}
+
+#angularjs {
+  background-color: white;
+}
+
+#angularjs>div {
+  width: 80%;
+}
+
+#author>div {
+  color: white;
+  text-align: center;
+  text-shadow: 0 0 5px black;
+}
+
+#bootstrap {
+  background-color: white;
+}
+
+#bootstrap>div {
+  width: 80%;
+}
+
+#content {
+  background-image: url('../images/bg-content.jpg');
+  background-size: 100% 100%;
+  color: blue;
+}
+
+#content>div {
+  width:80%;
+}
+
+#contribute>div {
+  background-color: rgba(255, 255, 255, 0.5);
+  border-radius: 20px;
+  padding: 30px;
+  text-shadow: 0 0 10px #ffffff;
+}
+
+#introduction {
+  background-image: url('../images/bg-introduction.jpg');
+  background-size: cover;
+}
+
+#introduction>div {
+  background-color: rgba(255, 255, 255, 0.5);
+  padding: 20px;
+  width: 80%;
+}
+
+#jquery {
+  background-color: rgba(255, 255, 255, 0.5);
+}
+
+#jquery>div {
+  width: 80%;
+}
+
+#material-design>div {
+  background-color: rgba(255, 255, 255, 0.5);
+  padding: 20px;
+  width: 80%;
+}
+
+#menu {
+  align-items: top;
+  display: flex;
+  justify-content: flex-end;
+  width: 100%;
+}
+
+#polymer {
+  background-color: white;
+}
+
+#polymer>div {
+  width: 80%;
+}
+
+#react {
+  background-color: rgba(255, 255, 255, 0.5);
+}
+
+#react>div {
+  width: 80%;
+}
+
+#title {
+  position: relative;
+}
+
+#title>div {
+  z-index: 1;
+  color: white;
+  text-align: center;
+  text-shadow: 0 0 5px black;
+}

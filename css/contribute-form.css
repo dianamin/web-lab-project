@@ -1,3 +1,27 @@
+input {
+  height: 30px;
+}
+
+input, textarea, select {
+  background-color: transparent;
+  border: none;
+  border-bottom: #2c3e50 solid 2px;
+  font-size: 15px;
+  margin: 5px;
+
+  -webkit-transition: all 0.7s;
+  -moz-transition: all 0.7s;
+  transition: all 0.7s;
+}
+
+input:focus, textarea:focus {
+  border-bottom: #1abc9c solid 3px;
+}
+
+textarea {
+  width: 100%;
+}
+
 ::-webkit-input-placeholder {
    color: #2c3e50;
 }
@@ -12,28 +36,4 @@
 
 :-ms-input-placeholder {  
    color: #2c3e50;  
-}
-
-textarea {
-  width: 100%;
-}
-
-input {
-  height: 30px;
-}
-
-input, textarea, select {
-  margin: 5px;
-  border: none;
-  background-color: transparent;
-  font-size: 15px;
-  border-bottom: #2c3e50 solid 2px;
-
-  -webkit-transition: all 0.7s;
-  -moz-transition: all 0.7s;
-  transition: all 0.7s;
-}
-
-input:focus, textarea:focus {
-  border-bottom: #1abc9c solid 3px;
 }
