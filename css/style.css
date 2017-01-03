@@ -258,9 +258,9 @@ circle {
   stroke: #2c3e50;
   stroke-width: 5px;
 
-  -webkit-transition: all 0.7s ease-in-out;
-  -moz-transition: all 0.7s ease-in-out;
-  transition: all 0.7s ease-in-out;
+  -webkit-transition: r 0.7s ease-in-out, stroke 0.7s ease-in-out;
+  -moz-transition: r 0.7s ease-in-out, stroke 0.7s ease-in-out;
+  transition: r 0.7s ease-in-out, stroke 0.7s ease-in-out;
 }
 
 circle.highlighted {
