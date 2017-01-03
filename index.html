@@ -4,6 +4,8 @@
   <meta charset="utf-8">
   <title>Framework-uri și librării</title>
   <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/contribute-form.css">
+  <link rel="stylesheet" href="css/fancy-svg.css">
   <link href="https://fonts.googleapis.com/css?family=Crafty+Girls"
         rel="stylesheet">
   <link href="https://fonts.googleapis.com/css?family=Patrick+Hand"
@@ -21,6 +23,9 @@
               </li>
               <li class="dropdown-content-button">
                 <a href="#content"> Conținut </a>
+              </li>
+              <li class="dropdown-content-button">
+                <a href="#contribute"> Contribuie </a>
               </li>
             </ul>
           </div>
@@ -160,6 +165,24 @@
         </div>
       </div>
     </section>
+    <section id="contribute">
+      <div>
+        <h2> Contribuie </h2>
+        <p> Vrei să adaugi o librărie sau un framework? </p>
+        <form>
+          <input type="text" placeholder="Cum se numește?">
+          <select>
+            <option value="" disabled selected> În ce categorie l-ai încadra? </option>
+            <option value="css"> CSS </option>
+            <option value="javascript"> Javascript </option>
+          </select>
+          <textarea placeholder="Descriere"></textarea>
+          <input type="text" placeholder="URL">
+          <br>
+          <input type="text" placeholder="Exemplu"> <button id="more-examples">+</button>
+        </form>
+      </div>  
+    </section>
     <section id="author">
       <div>
         <h2> ©Ghinea Diana-Elena </h2>
@@ -168,6 +191,6 @@
       </div>
     </section>
 
-    <script src="js/svg.js"></script>
+    <script src="js/fancy-svg.js"></script>
   </body>
 </html>
